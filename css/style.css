@@ -88,8 +88,8 @@ img {
 	letter-spacing: 2px;
 	color: #220000;
 	display: flex;
-	justify-content: center; /* align horizontal */
-	align-items: center; /* align vertical */
+	justify-content: center;
+	align-items: center;
 }
 
 button {
