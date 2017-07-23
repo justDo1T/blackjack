@@ -196,7 +196,7 @@ function backgroundMusic() {
 	function toggleMusic() {
 		backSound ? backgroundSound.pause() : backgroundSound.play();
 		backSound = !backSound;
-		$('#soundIcon').toggleClass('icon-volume icon-volume-off');
+		$('#soundIcon').toggleClass('fa-volume-up fa-volume-off');
 	}
 }
 
