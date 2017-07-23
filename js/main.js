@@ -235,7 +235,7 @@ $(document).ready(function() {
 	$('#stand').on('click', stand)
 
 	createDeck();
-	backgroundMusic();
+	//backgroundMusic();
 });
 
 })();   // end local scope - Blackjack
