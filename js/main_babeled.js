@@ -8,7 +8,7 @@ var deck = [],
     firstTime = true;
 /* audio declaration and settings */
 var backgroundSound = new Audio("audio/background.mp3"),
-    cardDealingSound = new Audio("audio/cardDealing.wav"),
+    cardDealingSound = new Audio("audio/cardDealing.mp3"),
     cardShuffle = new Audio("audio/cardShuffling.mp3");
 backgroundSound.volume = 0.15;
 backgroundSound.loop = true;
