@@ -84,20 +84,20 @@ Player.prototype = {
 	message: function (x) {
 		if (x === 'checkBlackjack') {
 			if (player.score === 21) {
-				$('#message').html('Blackjack!<br>You won');
+				$('#messageInfo').html('Blackjack!<br>You won');
 				toggleButtons();
 			}
 			return;
 		} else if (player.score > 21) {
-			$('#message').html('Dealer won<br>You bust!');
+			$('#messageInfo').html('Dealer won<br>You bust!');
 		} else if (dealer.score > 21) {
-			$('#message').html('Dealer bust!<br>You won');
+			$('#messageInfo').html('Dealer bust!<br>You won');
 		} else if (player.score === dealer.score) {
-			$('#message').html('Push :)');
+			$('#messageInfo').html('Push :)');
 		} else if (player.score > dealer.score) {
-			$('#message').html('Dealer lost<br>You won!');
+			$('#messageInfo').html('Dealer lost<br>You won!');
 		} else {
-			$('#message').html('Dealer won!<br>You lost');
+			$('#messageInfo').html('Dealer won!<br>You lost');
 		}
 		toggleButtons();
 	}
@@ -176,7 +176,7 @@ function reset() {
 	dealer.aceCount = 0;
 	player.aceCount = 0;
 	$('#dealerCards, #playerCards').html('');
-	$('#message').html('');
+	$('#messageInfo').html('');
 	$('#dealerPoints, #playerPoints').html('');
 }
 
@@ -207,7 +207,7 @@ function shuffle() {
 	dealBlocked = true;
 	firstTime = true;
 	$('.info, .score').css('visibility', 'hidden');
-	$('#message').html('Shuffling the deck...');
+	$('#messageInfo').html('Shuffling the deck...');
 
 	let counter = 0;
 	const cardInterval = setInterval(function() {
@@ -218,12 +218,22 @@ function shuffle() {
 			$('#dealerCards, #playerCards').html('');
 		} else if (counter === 12) {
 			$('#dealerCards, #playerCards').html('');
-			$('#message').html("Let's play again!<br>Click: Deal");
+			$('#messageInfo').html("Let's play again!<br>Click: Deal");
 			dealBlocked = false;
 			clearInterval(cardInterval);
 		}
 	}, 500);
 }
+
+// prevent firing 'focus' when clicked (but NOT when entered thanks to 'mousedown')
+$('#deal, #hit, #stand, #soundIcon').on('mousedown', function(event) {
+    event.preventDefault();
+});
+
+// enter works as a click when using tab+enter
+$('#soundIcon').on('keydown', function(e) {
+    if(e.which === 13) $(this).click();
+});
 
 // creating player and dealer object
 const dealer = new Player('dealer');
@@ -235,7 +245,7 @@ $(document).ready(function() {
 	$('#stand').on('click', stand)
 
 	createDeck();
-	//backgroundMusic();
+	backgroundMusic();
 });
 
 })();   // end local scope - Blackjack

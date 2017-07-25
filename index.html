@@ -4,14 +4,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-	<title>BlackJack</title>
+	<title>Blackjack</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-	<link href="css/style.css" rel="stylesheet">
+	<link href="css/style_prefixed.css" rel="stylesheet">
 </head>
 <body>
 	<div id="container">
 		<div id="dealer">
-			<h4 class="info">Dealer cards:</h4>
+			<div class="info">
+				<h4>Dealer cards:</h4>
+			</div>
 			<div id="dealerCards">
 			</div>
 			<div class="score">
@@ -19,10 +21,12 @@
 			</div>
 		</div>
 		<div id="message">
-			<p>Let's play!<br>Click: Deal</p>
+			<p id="messageInfo">Let's play!<br>Click: Deal</p>
 		</div>
 		<div id="player">
-			<h4 class="info">Player cards:</h4>
+			<div class="info">
+				<h4>Player cards:</h4>
+			</div>
 			<div id="playerCards">
 			</div>
 			<div class="score">
@@ -35,7 +39,7 @@
 			<button id="stand" type="button">Stand</button>
 		</div>
 		<div id="music">
-			<i id="soundIcon" class="fa fa-volume-up"></i>
+			<i id="soundIcon" class="fa fa-volume-up" tabindex="1"></i>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>	<!-- jQuery library -->

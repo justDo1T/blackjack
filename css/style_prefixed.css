@@ -1,0 +1,357 @@
+html {
+	font-size: 62.5%;
+	height: 100%;
+
+}
+
+body {
+	background-color: #443E3E;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	color: #E6E1E1;
+	width: 100%;
+	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#container {
+	position: relative;
+	width: 70%;
+	height: 80%;
+	border: 3px solid #262323;
+	border-radius: 20px;
+	-webkit-box-shadow: 20px 20px 30px 10px rgba(0,0,0,0.8);
+	        box-shadow: 20px 20px 30px 10px rgba(0,0,0,0.8);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#198e07+0,1b8406+25,217505+50,226605+75,185904+100 */
+	background: #198e07; /* Old browsers */ /* FF3.6-15 */ /* Chrome10-25,Safari5.1-6 */
+	background: -webkit-gradient(linear,  left top, left bottom,  from(#198e07),color-stop(25%, #1b8406),color-stop(50%, #217505),color-stop(75%, #226605),to(#185904));
+	background: linear-gradient(to bottom,  #198e07 0%,#1b8406 25%,#217505 50%,#226605 75%,#185904 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#198e07', endColorstr='#185904',GradientType=0 ); /* IE6-9 */
+}
+
+#dealer, #player {
+	width: 100%;
+	height: 35%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.info {
+	/*visibility: hidden;*/
+	height: 20%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+}
+
+h4 {
+	font-weight: 400;
+	font-size: 2.2rem;
+	margin: 0;
+}
+
+#dealerCards, #playerCards {
+	width: 100%;
+	height: 60%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+img {
+	height: 80%;
+	max-height: 130px;
+	max-width: 19%;
+	margin: 0 3px;
+	display: inline-block;
+}
+
+.score {
+	/*visibility: hidden;*/
+	width: 100%;
+	height: 20%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#dealerPoints, #playerPoints {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	width: 40px;
+	height: 40px;
+	background-color: rgba(204, 204, 0, 0.7);
+	border-radius: 50%;
+	color: black;
+	font-size: 2rem;
+	font-weight: 700;
+	-webkit-box-shadow: 2px 2px 8px 2px #666600;
+	        box-shadow: 2px 2px 8px 2px #666600;
+}
+
+#message {
+	width: 100%;
+	height: 15%;
+	text-align: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#messageInfo {
+	margin: 0;
+	margin-top: 15px;
+	font-size: 2.8rem;
+	font-weight: 700;
+	letter-spacing: 2px;
+	color: #220000;
+}
+
+#buttons {
+	width: 100%;
+	height: 15%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+button {
+	background-color: #443E3E;
+	color: #E6E1E1;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 30px;
+	margin: 0 10px;
+	font-size: 2rem;
+}
+
+button:hover {
+	color: black;
+	background-color: rgba(204, 204, 0, 0.9);
+	-webkit-box-shadow: 2px 2px 8px 2px #666600;
+	        box-shadow: 2px 2px 8px 2px #666600;
+}
+
+button:focus {
+	outline: none;
+	color: black;
+	background-color: rgba(204, 204, 0, 0.9);
+	-webkit-box-shadow: 2px 2px 8px 2px #666600;
+	        box-shadow: 2px 2px 8px 2px #666600;
+}
+
+#music {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	height: 30px;
+	width: 30px;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+#soundIcon {
+	font-size: 3rem;
+	color: black;
+}
+
+#soundIcon:hover {
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+#soundIcon:focus {
+	outline: none;
+	color: #CCCC00;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+}
+
+/*-------------Media Queries ---------------*/
+
+@media screen and (max-height: 800px) {
+
+	#container {
+		height: 90%;
+		-webkit-box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.8);
+		        box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.8);
+	}
+
+	h4 {
+		font-size: 2rem;
+	}
+
+	#messageInfo {
+		font-size: 2.4rem;
+	}
+
+	#dealerPoints, #playerPoints {
+		font-size: 1.8rem;
+	}
+
+	button {
+		padding: 9px 28px;
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-height: 650px) {
+
+	h4 {
+		font-size: 1.8rem;
+	}
+
+	#messageInfo {
+		font-size: 2rem;
+	}
+
+	#dealerPoints, #playerPoints {
+		width: 35px;
+		height: 35px;
+		font-size: 1.6rem;
+	}
+
+	button {
+		padding: 8px 26px;
+		margin: 0 9px;
+		font-size: 1.7rem;
+	}
+}
+
+@media screen and (max-height: 500px) {
+
+	h4 {
+		font-size: 1.6rem;
+	}
+
+	#messageInfo {
+		font-size: 1.7rem;
+		margin-top: 7px;
+	}
+
+	#dealerPoints, #playerPoints {
+		width: 32px;
+		height: 32px;
+		font-size: 1.6rem;
+	}
+
+	button {
+		padding: 8px 22px;
+		margin: 0 8px;
+		font-size: 1.6rem;
+	}
+}
+
+@media screen and (max-width: 800px) {
+
+	#container {
+		width: 80%;
+		-webkit-box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.8);
+		        box-shadow: 10px 10px 15px 5px rgba(0,0,0,0.8);
+	}
+}
+
+@media screen and (max-width: 600px), (max-height: 600px) {
+
+	#container {
+		width: 100%;
+		height: 100%;
+		border: 1px solid #262323;
+		border-radius: 5px;
+		-webkit-box-shadow: none;
+		        box-shadow: none;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
+	}
+
+	img {
+		margin: 0 2px;
+	}
+
+	#music {
+		top: 12px;
+		right: 15px;
+	}
+
+	#soundIcon {
+		font-size: 2.6rem;
+	}
+}
