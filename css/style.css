@@ -48,7 +48,7 @@ body {
 }
 
 .info {
-	/*visibility: hidden;*/
+	visibility: hidden;
 	height: 20%;
 	display: flex;
 	justify-content: center;
@@ -78,7 +78,7 @@ img {
 }
 
 .score {
-	/*visibility: hidden;*/
+	visibility: hidden;
 	width: 100%;
 	height: 20%;
 	display: flex;
